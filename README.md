@@ -1,6 +1,8 @@
 # Download Manager
 
 [![Build Status](https://travis-ci.org/ivmikhail/dm.svg?branch=master)](https://travis-ci.org/ivmikhail/dm)
+[![codecov](https://codecov.io/gh/ivmikhail/dm/branch/master/graph/badge.svg)](https://codecov.io/gh/ivmikhail/dm)
+
 
 Pet project
 
