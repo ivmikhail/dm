@@ -1,5 +1,7 @@
 # Download Manager
 
+[![Build Status](https://travis-ci.org/ivmikhail/dm.svg?branch=master)](https://travis-ci.org/ivmikhail/dm)
+
 Pet project
 
 ## Coding problem
