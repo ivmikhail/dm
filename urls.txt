@@ -1,0 +1,4 @@
+ftp://speedtest.tele2.net/50MB.zip
+http://speedtest.tele2.net/10MB.zip
+http://speedtest.tele2.net/1MB.zip
+#http://speedtest.tele2.net/1GB.zip

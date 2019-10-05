@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'jacoco'
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.jcraft:jsch:0.1.55'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.eclipse.jetty:jetty-server:9.4.14.v20181114'
+    testImplementation 'com.google.guava:guava:28.1-jre'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
+
+application {
+    mainClassName = 'com.github.ivmikhail.dm.App'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': mainClassName
+        )
+    }
+    from sourceSets.main.output
+
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
+    }
+}
