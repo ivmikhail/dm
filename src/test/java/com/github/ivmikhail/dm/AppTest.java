@@ -11,6 +11,7 @@ import java.io.PrintStream;
 import java.security.Permission;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class AppTest {
     private SecurityManager originalSecurityManager;
@@ -55,6 +56,7 @@ public class AppTest {
         App.main(new String[]{f.getAbsolutePath()});//pass empty file
 
         assertEquals("Start download data from []\n", outContent.toString());
+        fail();
         f.delete();
     }
 }
