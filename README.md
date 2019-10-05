@@ -22,7 +22,7 @@ In your code, please consider:
 
 You can implement the code Scala or Java and also include tests.
 
-##Usage
+## Usage
 
 ```
 java [-Dapp.properties=/path/to/app.properties] -jar dm.jar /path/to/urls.txt
