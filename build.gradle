@@ -27,7 +27,7 @@ jacocoTestReport {
 }
 
 application {
-    mainClassName = 'com.github.ivmikhail.dm.App'
+    mainClassName = 'dev.ivmikhail.dm.App'
 }
 
 jar {

@@ -1,4 +1,4 @@
-package com.github.ivmikhail.dm;
+package dev.ivmikhail.dm;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

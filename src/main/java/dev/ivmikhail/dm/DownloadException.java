@@ -1,4 +1,4 @@
-package com.github.ivmikhail.dm;
+package dev.ivmikhail.dm;
 
 public class DownloadException extends RuntimeException {
     public DownloadException(String message) {

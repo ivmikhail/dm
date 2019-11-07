@@ -1,7 +1,7 @@
-package com.github.ivmikhail.dm;
+package dev.ivmikhail.dm;
 
-import com.github.ivmikhail.dm.downloaders.Downloader;
-import com.github.ivmikhail.dm.util.ExceptionUtils;
+import dev.ivmikhail.dm.downloaders.Downloader;
+import dev.ivmikhail.dm.util.ExceptionUtils;
 
 import java.io.IOException;
 import java.nio.file.Files;

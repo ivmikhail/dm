@@ -1,4 +1,4 @@
-package com.github.ivmikhail.dm;
+package dev.ivmikhail.dm;
 
 import org.junit.After;
 import org.junit.Before;

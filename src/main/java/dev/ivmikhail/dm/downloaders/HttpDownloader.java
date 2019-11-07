@@ -1,6 +1,6 @@
-package com.github.ivmikhail.dm.downloaders;
+package dev.ivmikhail.dm.downloaders;
 
-import com.github.ivmikhail.dm.Config;
+import dev.ivmikhail.dm.Config;
 
 import java.io.File;
 import java.io.FileOutputStream;

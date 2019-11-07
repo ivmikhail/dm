@@ -1,4 +1,4 @@
-package com.github.ivmikhail.dm.util;
+package dev.ivmikhail.dm.util;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

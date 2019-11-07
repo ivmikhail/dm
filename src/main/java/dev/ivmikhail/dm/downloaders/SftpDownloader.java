@@ -1,13 +1,12 @@
-package com.github.ivmikhail.dm.downloaders;
+package dev.ivmikhail.dm.downloaders;
 
-import com.github.ivmikhail.dm.Config;
-import com.github.ivmikhail.dm.DownloadException;
+import dev.ivmikhail.dm.Config;
+import dev.ivmikhail.dm.DownloadException;
 import com.jcraft.jsch.*;
+import dev.ivmikhail.dm.util.URLUtils;
 
 import java.io.File;
 import java.net.URL;
-
-import static com.github.ivmikhail.dm.util.URLUtils.*;
 
 public class SftpDownloader extends Downloader {
     private static final int DEFAULT_PORT = 22;
@@ -24,9 +23,9 @@ public class SftpDownloader extends Downloader {
         Session session = null;
         Channel channel = null;
         try {
-            session = jsch.getSession(getUser(url, DEFAULT_USER_NAME), url.getHost(), getPort(url, DEFAULT_PORT));
+            session = jsch.getSession(URLUtils.getUser(url, DEFAULT_USER_NAME), url.getHost(), URLUtils.getPort(url, DEFAULT_PORT));
             session.setConfig("StrictHostKeyChecking", "no");
-            session.setPassword(getPass(url, DEFAULT_USER_PASS));
+            session.setPassword(URLUtils.getPass(url, DEFAULT_USER_PASS));
             session.setTimeout(config.getTimeoutMillis());
             session.connect();
 

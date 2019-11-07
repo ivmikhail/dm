@@ -1,6 +1,6 @@
-package com.github.ivmikhail.dm;
+package dev.ivmikhail.dm;
 
-import com.github.ivmikhail.dm.util.LoadProperties;
+import dev.ivmikhail.dm.util.LoadProperties;
 
 import java.io.IOException;
 import java.nio.file.Files;

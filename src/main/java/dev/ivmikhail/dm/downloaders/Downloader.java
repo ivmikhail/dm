@@ -1,9 +1,9 @@
-package com.github.ivmikhail.dm.downloaders;
+package dev.ivmikhail.dm.downloaders;
 
 
-import com.github.ivmikhail.dm.Config;
-import com.github.ivmikhail.dm.DownloadException;
-import com.github.ivmikhail.dm.util.URLUtils;
+import dev.ivmikhail.dm.Config;
+import dev.ivmikhail.dm.DownloadException;
+import dev.ivmikhail.dm.util.URLUtils;
 
 import java.io.File;
 import java.io.IOException;
